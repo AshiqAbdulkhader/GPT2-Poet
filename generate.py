@@ -1,8 +1,8 @@
 from transformers import TFGPT2LMHeadModel, GPT2Tokenizer
 import argparse
 
-tokenizer = GPT2Tokenizer.from_pretrained("models")
-model = TFGPT2LMHeadModel.from_pretrained("models")
+tokenizer = GPT2Tokenizer.from_pretrained("ashiqabdulkhader/GPT2-Poet")
+model = TFGPT2LMHeadModel.from_pretrained("ashiqabdulkhader/GPT2-Poet")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--prompt", type=str, default="The quick brown fox")
